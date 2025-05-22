@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contents="Width device-width">
+        <title>Women Wears</title>
+        <a href="Black.html">Back to page 1</a>
+    </head>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin:30px;
+        }
+        .container{
+            display:flex ;
+            gap:40px;
+        }
+        .image{
+            width:100%;
+        }
+        .images img{
+            width:100%;
+            max-width:300px
+        }
+        .thumbnails{
+            display:flex;
+            gap:50px;
+            margin-top:10px;
+            justify-content: center;
+        }
+        .thumbnails img{
+            width:50px;
+            cursor:pointer;
+        }
+        .p{
+            width:250px;
+        }
+        .price{
+            font-size: 24px;
+             color:green;
+        }
+        .btn{
+            background-color:green;
+            padding:8px 12px;
+            border:none;
+            cursor:pointer;
+        }
+        select, input{
+            margin:10px,0;
+            padding:5px;
+        }
+        @media (max-width:648px) {
+            .container{
+                flex-direction:column;
+                justify-content: center;
+            }
+        }
+    </style>
+    <body>
+        <h1>Men's T-shirt</h1>
+        <div class="container">
+            <div class="Images">
+                <img src="Main-Shirt1.jpeg" alt="Men's shirt">
+              <div class="thumbnails">
+                <img src="Shirt2.jpeg" alt="Thumb 1">
+                <img src="Shirt3.jpeg" alt="Thumb 2">
+                <img src="Shirt4.jpeg" alt="Thumb 3">
+                <img src="Shirt5.jpeg" alt="Thumb 4">
+              </div>
+            </div>
+            <div class="details">
+                <P class="price">$100.00</p>
+                <label for="size">Select size:</label>
+                <select id="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>XL</option>
+                </select> </br>
+                <label for="qty">Qty:</label>
+                <input type="number" id="qty" value="1"min="1">
+                <button class="btn">Add to cart</button>
+
+                <h3>Product Details</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur odio blanditiis recusandae error beatae nesciunt repellendus hic numquam iure debitis cumque repudiandae eligendi perspiciatis, ratione sed quae architecto officiis rerum voluptatibus. Placeat sunt excepturi earum vitae, quo at quisquam deserunt quaerat labore voluptatum, quasi officiis sed, neque tenetur nisi? Totam.</p>
+            </div>
+        </div>
+    </body>
+</html>

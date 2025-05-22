@@ -1,0 +1,139 @@
+.features{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+}
+.feature-box {
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius: 20px;
+    box-shadow:0 4px 6px rgba(0,0,0,0,0.1);
+    width:150px;
+    height:200px;
+    justify-content: center;
+    margin-left: 10rem;
+}
+.feature-box img{
+    width:80px;
+    height:auto;
+    margin-bottom:10px;
+} 
+.feature-box p{
+    width:125px;
+    font-weight: bold;
+    font-size:16px;
+    margin:0;
+    margin-top:25px;
+}
+.pink p {background-color: deeppink; color:white; padding:5px; border-radius: 5px;}
+.blue p {background-color: blue; color:white; padding:5px; border-radius:5px}
+.yellow p {background-color: yellow; color:black; padding:5px; border-radius: 5px;}
+.red p {background-color: red; color:white; padding:5px; border-radius: 5px;}
+
+.features{
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+}
+/* Product*/
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  border: 1px gray solid;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 250px;
+  max-width: 300px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px gray solid;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.title {
+  color: green;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.stars {
+  color: gold;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.cart-btn {
+  background-color:lightgreen;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  float: right;
+  margin-top: 0;
+  margin-right: 13px;
+  cursor: pointer;
+}
+/*Shop layout*/
+.grid.container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  gap:10px;
+  padding:10px;
+}
+.grid-items{
+  align-items: center;
+  text-align: center;
+  padding:10px;
+  font-size: 10px;
+}
+.item1{
+  grid-column: 1 / span2;
+}
+.overlay{
+  background: white(0, 0, 0.4);
+  padding:10px;
+  border-radius: 8px;
+}
+.button{
+    margin-top: 10px;
+    padding:8px 16px;
+    border:none;
+    background-color: black;
+    color:yellow;
+    border-radius:4px ;
+}
+@media (max-width:648px) {
+    .features{
+        grid-template-columns: auto;
+    }
+}
