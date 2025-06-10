@@ -132,6 +132,46 @@
     color:yellow;
     border-radius:4px ;
 }
+/*Subscribe-box*/
+.Subscribe-box{
+  background-color:#0c0f4a;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  margin:0;
+}
+.Subscribe-box{
+  text-align: center;
+  color:white;
+}
+.Subscribe-box p span {
+color:#ff3c00;
+font-size: bold;
+}
+.input-box{
+  margin-top: 20px;
+}
+.input-box input[type="email"]{
+  padding: 12px 20px;
+  border:none;
+  border-radius:6px 0 0 6px;
+  width: 250px;
+  font-size: 60px;
+  outline:none;
+}
+.input-box button{
+  padding: 12px 20px;
+  background-color:Green;
+  border:5px;
+  border-radius: 0 6px 6px 0;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+.input-box button:hover{
+  background-color: #45a049;
+}
 @media (max-width:648px) {
     .features{
         grid-template-columns: auto;
